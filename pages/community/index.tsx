@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
+import Layout from "../../components/layout";
 
 const Community: NextPage = () => {
   return (
-    <div className="py-16 space-y-8">
+    <Layout title="동네생활" hasTabBar>
       {[1, 1, 1, 1, 1, 1, 1].map((_, i) => (
         <div 
         key={i} 
@@ -72,7 +73,7 @@ const Community: NextPage = () => {
               ></path>
             </svg>
         </button>
-    </div >
+    </Layout>
   );
 };
 
