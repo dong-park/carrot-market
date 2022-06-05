@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 
 const ChatDetail: NextPage = () => {
   return (
-    <div className="mt-8 px-2">
+    <div className="py-10 pb-16 px-4 space-y-4">
       <div>
         {[1, 2, 3, 4, 5, 6, 7, 8].map((_, i) => (
           <div key={i} className="space-y-4">
@@ -19,10 +19,9 @@ const ChatDetail: NextPage = () => {
               <div className="w-1/2 text-sm font-medium p-1 border-gray-400 border rounded-md">미쳤어</div>
             </div>
           </div>
-
         ))}
       </div>
-      <div className="fixed w-full mx-auto max-w-md bottom-1 inset-x-0 px-1">
+      <div className="fixed w-full mx-auto max-w-md bottom-0 inset-x-0 px-1">
         <div className="flex items-center space-x-1">
           <input
             className="w-full rounded-full border-gray-300 focus:ring focus:ring-orange-500 focus:border-gray-300"
